@@ -7,7 +7,7 @@ alur
 4. cek apakah user dah login
 5. kalau belum masuk halaman login
 6. cek apakah user dah punya akun apa belum
-7. kalau belum daftar dulu-login(halaman register)
+7. kalau belum daftar dulu(halaman register)-login/halaman shipping
 8. kalau dah punya tinggal login(halaman login)
 9. masuk halaman shipping(isi data shipping dan payment)
 10. selesai payment orderan masuk tabel orders
