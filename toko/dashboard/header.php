@@ -23,7 +23,12 @@ $total_barang_cart = isset($rowTotalCart['total']) ? $rowTotalCart['total'] : 0;
     <!-- Bootstrap icons-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
     <!-- Core theme CSS (includes Bootstrap)-->
-    <link href="../css/styles.css" rel="stylesheet">
+    <link href="../css/styles2.css" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
 </head>
 <body>
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -45,34 +50,30 @@ $total_barang_cart = isset($rowTotalCart['total']) ? $rowTotalCart['total'] : 0;
                     </ul>
                 </li>
             </ul>
-            <!-- <form class="d-flex"> -->
-                <!-- <a class="nav-link" href="search.php"></a>
-
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" style="max-width: 13rem;">
-                <button class="btn" type="button">
-                    <i class="bi bi-search"></i>
-                </button> -->
-
             <!-- search -->
             <div class="d-flex align-items-center">
                 <button class="btn me-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#search" aria-controls="offcanvasSearch" style="position: relative;">
                     <i class="bi bi-search"></i>   
                 </button>
-            </div>
-            <!-- cart icon -->
-            <div class="d-flex align-items-center">
-                <div class="badge bg-dark text-white ms-1 rounded-pill position-absolute" style="bottom: 1.8rem; right: 12rem;">
-                        <?php echo $total_barang_cart; ?></div>
+            
+                    <!-- awal posisis badge cart  -->
+                <!-- <div class="badge-fixed badge bg-dark text-white rounded-pill position-absolute" style="bottom: 1.8rem; right: 12.5rem; position: relative;">
+                        <?php echo $total_barang_cart; ?></div> -->
+                        <!-- cart icon -->
                         <button class="btn me-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#add_to_cart" aria-controls="offcanvasExample" style="position: relative;">
                             <i class="bi bi-cart-fill mx-auto"></i>
+                            <!-- badge cart pindah -->
+                            <div class="badge-fixed badge bg-dark text-white rounded-pill position-absolute" style="position: relative;">
+                            <?php echo $total_barang_cart; ?></div>
+                            </button>
                 <!-- <button class="btn" type="button">
                     <i class="bi bi-heart-fill"></i>
                 </button> -->
 
                 <!-- profile -->
-                <button class="btn" type="button">
-                    <i class="bi bi-person-fill"></i>
-                </button>
+                    <a href="sign_in.php" class="btn ms-2">
+                        <i class="bi bi-person-fill"></i>
+                </a>
             </div>
         </div>
     </div>
